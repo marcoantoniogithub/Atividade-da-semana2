@@ -61,10 +61,17 @@ public class TreeNode {
     
     
  
-    public static void main(String[] args) 
-    {
-    	int[] intArray = new int[]{3,4,5,8,15,7,9,2,22,40,30,56,98,100,33,31,45,66,77,88,1,6};
-        TreeNode root = createRandomIntegerTree(intArray);
+    public static void main(String[] args){
+    	
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("quantas posicoes tera a arvore?");
+    	int posicoes = sc.nextInt();
+    	int [] number = new int [posicoes];
+    	System.out.println("Digite os "+posicoes+" numeros");
+    	for(int i=0;i<number.length;i++){
+    		number[i] = sc.nextInt();
+    	}
+        TreeNode root = createRandomIntegerTree(number);
         root.inOrderInteger(", ");
         drawTree (root);
     }
