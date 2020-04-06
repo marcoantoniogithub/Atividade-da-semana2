@@ -79,7 +79,7 @@ public class TreeNode {
     static void drawTree(TreeNode root) 
     {
         
-        System.out.println("\n\nLevel order traversal of tree:");
+        System.out.println("\n\n tree:");
         int depth = depth(root);
         setLevels (root, 0);
         
